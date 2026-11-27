@@ -1,0 +1,1 @@
+Build an assistant for our technical superintendents and procurement officers that helps them find ship spare parts in our catalogue, check stock, price and lead time, and work out order totals including supplier discounts. It should also explain supplier terms like minimum order, delivery and warranty. It should not handle crew matters or give engine repair instructions.
