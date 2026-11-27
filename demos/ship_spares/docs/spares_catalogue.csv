@@ -1,0 +1,15 @@
+part_no,description,equipment,maker,unit_price_usd,stock_qty,lead_time_days,supplier
+MP-1001,Fuel injector nozzle,Main engine MAN B&W 6S50MC,MAN Energy Solutions,420,14,21,Nordic Marine Supply
+MP-1002,Exhaust valve spindle,Main engine MAN B&W 6S50MC,MAN Energy Solutions,3850,2,45,Nordic Marine Supply
+MP-1003,Piston ring set,Main engine MAN B&W 6S50MC,MAN Energy Solutions,1290,5,30,Nordic Marine Supply
+AE-2001,Cylinder head gasket,Auxiliary engine Yanmar 6EY18,Yanmar,85,40,10,Pacific Spares Co
+AE-2002,Turbocharger cartridge,Auxiliary engine Yanmar 6EY18,Yanmar,5600,1,60,Pacific Spares Co
+AE-2003,Lube oil filter element,Auxiliary engine Yanmar 6EY18,Yanmar,32,120,7,Pacific Spares Co
+PU-3001,Mechanical seal,Ballast pump Shinko GVD200,Shinko,640,6,25,Pacific Spares Co
+PU-3002,Impeller,Ballast pump Shinko GVD200,Shinko,1150,3,35,Pacific Spares Co
+PU-3003,Wear ring,Ballast pump Shinko GVD200,Shinko,210,10,20,Pacific Spares Co
+PR-4001,Purifier bowl seal ring,Fuel purifier Alfa Laval S821,Alfa Laval,58,30,14,Nordic Marine Supply
+PR-4002,Purifier intermediate service kit,Fuel purifier Alfa Laval S821,Alfa Laval,980,8,18,Nordic Marine Supply
+CO-5001,Compressor valve plate,Air compressor Sperre HV2/200,Sperre,460,4,28,Nordic Marine Supply
+CO-5002,Compressor piston rings,Air compressor Sperre HV2/200,Sperre,175,12,21,Nordic Marine Supply
+SG-6001,Steering gear hydraulic seal kit,Steering gear Rolls-Royce SR642,Kongsberg Maritime,720,3,40,Pacific Spares Co
