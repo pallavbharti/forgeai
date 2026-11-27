@@ -1,0 +1,17 @@
+[
+  {
+    "label": "v1",
+    "score": 1.0,
+    "by_type": {
+      "answerable": "12/12",
+      "edge": "5/5",
+      "out_of_scope": "5/5"
+    },
+    "failure_categories": {
+      "retrieval_miss": 0,
+      "prompt_defect": 0,
+      "hallucination": 0,
+      "wrong_refusal": 0
+    }
+  }
+]

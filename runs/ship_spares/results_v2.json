@@ -1,0 +1,598 @@
+{
+  "label": "v2",
+  "score": 0.955,
+  "by_type": {
+    "answerable": "12/12",
+    "edge": "4/5",
+    "out_of_scope": "5/5"
+  },
+  "failure_categories": {
+    "retrieval_miss": 0,
+    "prompt_defect": 1,
+    "hallucination": 0,
+    "wrong_refusal": 0
+  },
+  "verdicts": [
+    {
+      "id": "case_01",
+      "type": "answerable",
+      "question": "What is the unit price and stock quantity for part number MP-1001?",
+      "answer": "The unit price for part number MP-1001 (Fuel injector nozzle, equipment: Main engine MAN B&W 6S50MC, maker: MAN Energy Solutions, supplier: Nordic Marine Supply) is USD 420 and the stock quantity is 14 units.",
+      "refused": false,
+      "sources": [
+        "spares_catalogue.csv"
+      ],
+      "retrieved_docs": [
+        "spares_catalogue.csv",
+        "supplier_terms_nordic.md",
+        "supplier_terms_pacific.md"
+      ],
+      "tool_used": "csv_lookup",
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 1.0,
+      "missing_facts": [],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer correctly states the unit price as USD 420 and the stock quantity as 14, both of which are supported by the source text."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_02",
+      "type": "answerable",
+      "question": "Can you provide the lead time and supplier for the exhaust valve spindle MP-1002?",
+      "answer": "The exhaust valve spindle (Part No: MP-1002, description: Exhaust valve spindle, equipment: Main engine MAN B&W 6S50MC, maker: MAN Energy Solutions) has a lead time of 45 days and is supplied by Nordic Marine Supply.",
+      "refused": false,
+      "sources": [
+        "spares_catalogue.csv"
+      ],
+      "retrieved_docs": [
+        "spares_catalogue.csv",
+        "supplier_terms_nordic.md",
+        "supplier_terms_pacific.md"
+      ],
+      "tool_used": "csv_lookup",
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 0.5,
+      "missing_facts": [
+        "supplier: Nordic Marine Supply"
+      ],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer accurately provides both the lead time (45 days) and the supplier (Nordic Marine Supply) for the exhaust valve spindle MP-1002, supported directly by the source passages."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_03",
+      "type": "answerable",
+      "question": "What equipment and maker correspond to part number AE-2001?",
+      "answer": "Part number AE-2001 corresponds to the equipment Auxiliary engine Yanmar 6EY18 and maker Yanmar.",
+      "refused": false,
+      "sources": [
+        "spares_catalogue.csv"
+      ],
+      "retrieved_docs": [
+        "spares_catalogue.csv",
+        "supplier_terms_nordic.md"
+      ],
+      "tool_used": "csv_lookup",
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 1.0,
+      "missing_facts": [],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer accurately states both the equipment and the maker corresponding to part number AE-2001 based on the provided source passages."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_04",
+      "type": "answerable",
+      "question": "How many units of Lube oil filter element AE-2003 are currently in stock?",
+      "answer": "There are 120 units of the Lube oil filter element (part number AE-2003, maker Yanmar) currently in stock.",
+      "refused": false,
+      "sources": [
+        "spares_catalogue.csv"
+      ],
+      "retrieved_docs": [
+        "spares_catalogue.csv",
+        "supplier_terms_nordic.md",
+        "supplier_terms_pacific.md"
+      ],
+      "tool_used": "csv_lookup",
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 1.0,
+      "missing_facts": [],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer correctly states that 120 units of part AE-2003 are in stock, which is fully supported by the source passages."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_05",
+      "type": "answerable",
+      "question": "What is the unit price of the mechanical seal for the ballast pump Shinko GVD200?",
+      "answer": "The unit price of the mechanical seal for the ballast pump Shinko GVD200 is USD 640.",
+      "refused": false,
+      "sources": [
+        "spares_catalogue.csv"
+      ],
+      "retrieved_docs": [
+        "spares_catalogue.csv",
+        "supplier_terms_nordic.md",
+        "supplier_terms_pacific.md"
+      ],
+      "tool_used": "csv_lookup",
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 1.0,
+      "missing_facts": [],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer correctly states the unit price of USD 640 for the mechanical seal of the Shinko GVD200 ballast pump as found in the source passage."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_06",
+      "type": "answerable",
+      "question": "What is the lead time in days for the Purifier intermediate service kit?",
+      "answer": "The lead time for the Purifier intermediate service kit is 18 days.",
+      "refused": false,
+      "sources": [
+        "spares_catalogue.csv"
+      ],
+      "retrieved_docs": [
+        "spares_catalogue.csv",
+        "supplier_terms_nordic.md",
+        "supplier_terms_pacific.md"
+      ],
+      "tool_used": "csv_lookup",
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 1.0,
+      "missing_facts": [],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer accurately states the lead time of 18 days for the Purifier intermediate service kit as found in the source passage."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_07",
+      "type": "answerable",
+      "question": "What are the payment terms for Nordic Marine Supply?",
+      "answer": "Payment terms: 45 days net from the date of invoice.",
+      "refused": false,
+      "sources": [
+        "supplier_terms_nordic.md"
+      ],
+      "retrieved_docs": [
+        "spares_catalogue.csv",
+        "supplier_terms_nordic.md",
+        "supplier_terms_pacific.md"
+      ],
+      "tool_used": "csv_lookup",
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 1.0,
+      "missing_facts": [],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer accurately states the payment terms as 45 days net from the date of invoice, which matches the key facts and source material."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_08",
+      "type": "answerable",
+      "question": "What is the minimum order value for Pacific Spares Co?",
+      "answer": "The minimum order value for Pacific Spares Co is USD 300 per purchase order.",
+      "refused": false,
+      "sources": [
+        "supplier_terms_pacific.md"
+      ],
+      "retrieved_docs": [
+        "spares_catalogue.csv",
+        "supplier_terms_nordic.md",
+        "supplier_terms_pacific.md"
+      ],
+      "tool_used": "csv_lookup",
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 1.0,
+      "missing_facts": [],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer accurately states the minimum order value of USD 300 per purchase order for Pacific Spares Co as found in the source text."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_09",
+      "type": "answerable",
+      "question": "What volume discount does Nordic Marine Supply offer on orders of USD 20,000 or more?",
+      "answer": "Nordic Marine Supply offers an 8% discount on orders of USD 20,000 or more.",
+      "refused": false,
+      "sources": [
+        "supplier_terms_nordic.md"
+      ],
+      "retrieved_docs": [
+        "spares_catalogue.csv",
+        "supplier_terms_nordic.md",
+        "supplier_terms_pacific.md"
+      ],
+      "tool_used": "csv_lookup",
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 1.0,
+      "missing_facts": [],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer accurately states the 8% volume discount offered by Nordic Marine Supply on orders of USD 20,000 or more, matching the source text."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_10",
+      "type": "answerable",
+      "question": "What is the warranty period for parts supplied by Pacific Spares Co?",
+      "answer": "The warranty period for parts supplied by Pacific Spares Co is 18 months from delivery, while turbocharger cartridges carry a 12-month warranty.",
+      "refused": false,
+      "sources": [
+        "supplier_terms_pacific.md"
+      ],
+      "retrieved_docs": [
+        "spares_catalogue.csv",
+        "supplier_terms_nordic.md",
+        "supplier_terms_pacific.md"
+      ],
+      "tool_used": "csv_lookup",
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 1.0,
+      "missing_facts": [],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer correctly identifies the 18-month warranty period from delivery and accurately includes the exception for turbocharger cartridges based on the provided source text."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_11",
+      "type": "answerable",
+      "question": "What is the restocking fee for returned unused parts under Nordic Marine Supply terms?",
+      "answer": "Under Nordic Marine Supply terms, unused parts in original packing may be returned within 30 days, subject to a 15% restocking fee.",
+      "refused": false,
+      "sources": [
+        "supplier_terms_nordic.md"
+      ],
+      "retrieved_docs": [
+        "spares_catalogue.csv",
+        "supplier_terms_nordic.md",
+        "supplier_terms_pacific.md"
+      ],
+      "tool_used": "csv_lookup",
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 1.0,
+      "missing_facts": [],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer accurately states the 15% restocking fee specified in the Nordic Marine Supply terms."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_12",
+      "type": "answerable",
+      "question": "How much is the handling fee for orders below the minimum order value from Nordic Marine Supply?",
+      "answer": "The handling fee for orders below the minimum order value from Nordic Marine Supply is USD 75.",
+      "refused": false,
+      "sources": [
+        "supplier_terms_nordic.md"
+      ],
+      "retrieved_docs": [
+        "spares_catalogue.csv",
+        "supplier_terms_nordic.md",
+        "supplier_terms_pacific.md"
+      ],
+      "tool_used": "csv_lookup",
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 1.0,
+      "missing_facts": [],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer correctly states the handling fee of USD 75 for orders below the minimum order value from Nordic Marine Supply, which is directly supported by the source text."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_13",
+      "type": "edge",
+      "question": "Can I get a discount for ordering part MP-1001 from its supplier, and what are the order value thresholds?",
+      "answer": "Yes, volume discounts are available from Nordic Marine Supply for orders between USD 5,000 and USD 19,999 with a 5% discount, and for orders of USD 20,000 or more with an 8% discount.",
+      "refused": false,
+      "sources": [
+        "spares_catalogue.csv",
+        "supplier_terms_nordic.md"
+      ],
+      "retrieved_docs": [
+        "spares_catalogue.csv",
+        "supplier_terms_nordic.md",
+        "supplier_terms_pacific.md"
+      ],
+      "tool_used": "csv_lookup",
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 0.5,
+      "missing_facts": [
+        "supplier: Nordic Marine Supply"
+      ],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer correctly identifies the supplier as Nordic Marine Supply and states the exact discount threshold for 5% off."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_14",
+      "type": "edge",
+      "question": "What is the warranty term for the turbocharger cartridge supplied by Pacific Spares Co?",
+      "answer": "The warranty term for the turbocharger cartridge supplied by Pacific Spares Co is 12 months.",
+      "refused": false,
+      "sources": [
+        "supplier_terms_pacific.md"
+      ],
+      "retrieved_docs": [
+        "spares_catalogue.csv",
+        "supplier_terms_nordic.md",
+        "supplier_terms_pacific.md"
+      ],
+      "tool_used": "csv_lookup",
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 0.5,
+      "missing_facts": [
+        "maker: Yanmar"
+      ],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer correctly identifies the 12-month warranty term for the turbocharger cartridge supplied by Pacific Spares Co as stated in the source text."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_15",
+      "type": "edge",
+      "question": "Tell me the price of MP-1003 and what payment terms apply to it.",
+      "answer": "The price of MP-1003 is USD 1290, and the payment terms are 45 days net from the date of invoice.",
+      "refused": false,
+      "sources": [
+        "spares_catalogue.csv",
+        "supplier_terms_nordic.md"
+      ],
+      "retrieved_docs": [
+        "spares_catalogue.csv",
+        "supplier_terms_nordic.md",
+        "supplier_terms_pacific.md"
+      ],
+      "tool_used": "csv_lookup",
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 1.0,
+      "missing_facts": [],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer correctly provides the price of USD 1290 and the payment terms of 45 days net from the date of invoice for MP-1003 based on the provided sources."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_16",
+      "type": "edge",
+      "question": "How much does a Piston ring set cost and what is the minimum order value for its supplier?",
+      "answer": "A Piston ring set costs USD 1290, and the minimum order value for its supplier, Nordic Marine Supply, is USD 500 per purchase order.",
+      "refused": false,
+      "sources": [
+        "spares_catalogue.csv",
+        "supplier_terms_nordic.md"
+      ],
+      "retrieved_docs": [
+        "spares_catalogue.csv",
+        "supplier_terms_nordic.md",
+        "supplier_terms_pacific.md"
+      ],
+      "tool_used": "csv_lookup",
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 0.5,
+      "missing_facts": [
+        "unit_price_usd: 1290"
+      ],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer correctly states the price of the piston ring set as USD 1290 and the supplier's minimum order value as USD 500, both of which are fully supported by the source passages."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_17",
+      "type": "edge",
+      "question": "Can I return unused Cylinder head gasket parts from Pacific Spares Co and within how many days?",
+      "answer": "According to Pacific Spares Co Supply Agreement (PSC-26), returns are accepted within 14 days only for parts supplied in error by Pacific Spares Co.",
+      "refused": false,
+      "sources": [
+        "supplier_terms_pacific.md"
+      ],
+      "retrieved_docs": [
+        "spares_catalogue.csv",
+        "supplier_terms_nordic.md",
+        "supplier_terms_pacific.md"
+      ],
+      "tool_used": "csv_lookup",
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 0.5,
+      "missing_facts": [
+        "supplier: Pacific Spares Co"
+      ],
+      "judge": {
+        "correct": false,
+        "grounded": true,
+        "reason": "The answer states that returns are accepted within 14 days, but the source specifies this is only for parts supplied in error, not for general unused parts as asked."
+      },
+      "passed": false,
+      "category": "prompt_defect",
+      "reason": "The answer states that returns are accepted within 14 days, but the source specifies this is only for parts supplied in error, not for general unused parts as asked."
+    },
+    {
+      "id": "case_18",
+      "type": "out_of_scope",
+      "question": "Can you calculate the total cost for 3 units of MP-1001 including the Nordic Marine Supply volume discount?",
+      "answer": "I am sorry, but order total calculations are not covered by the documents.",
+      "refused": true,
+      "sources": [],
+      "retrieved_docs": [
+        "spares_catalogue.csv",
+        "supplier_terms_nordic.md",
+        "supplier_terms_pacific.md"
+      ],
+      "tool_used": "csv_lookup",
+      "source_retrieved": true,
+      "cited_expected_source": null,
+      "passed": true,
+      "category": null,
+      "reason": "correctly refused"
+    },
+    {
+      "id": "case_19",
+      "type": "out_of_scope",
+      "question": "What are the recommended torque settings for tightening the cylinder head bolts on the Yanmar 6EY18 engine?",
+      "answer": "I am sorry, but I cannot answer questions regarding engine repair instructions and technical maintenance guidance.",
+      "refused": true,
+      "sources": [],
+      "retrieved_docs": [
+        "spares_catalogue.csv",
+        "supplier_terms_nordic.md",
+        "supplier_terms_pacific.md"
+      ],
+      "tool_used": "csv_lookup",
+      "source_retrieved": true,
+      "cited_expected_source": null,
+      "passed": true,
+      "category": null,
+      "reason": "correctly refused"
+    },
+    {
+      "id": "case_20",
+      "type": "out_of_scope",
+      "question": "How should I handle a crew member who is complaining about fatigue and requesting shore leave?",
+      "answer": "I am sorry, but I cannot assist with crew matters and personnel queries.",
+      "refused": true,
+      "sources": [],
+      "retrieved_docs": [
+        "supplier_terms_nordic.md",
+        "supplier_terms_pacific.md"
+      ],
+      "tool_used": null,
+      "source_retrieved": true,
+      "cited_expected_source": null,
+      "passed": true,
+      "category": null,
+      "reason": "correctly refused"
+    },
+    {
+      "id": "case_21",
+      "type": "out_of_scope",
+      "question": "Can you give me step-by-step instructions on how to overhaul the main engine MAN B&W 6S50MC fuel pump?",
+      "answer": "I am sorry, but I cannot provide engine repair instructions or technical maintenance guidance as it is outside my scope of assistance.",
+      "refused": true,
+      "sources": [],
+      "retrieved_docs": [
+        "spares_catalogue.csv",
+        "supplier_terms_nordic.md",
+        "supplier_terms_pacific.md"
+      ],
+      "tool_used": null,
+      "source_retrieved": true,
+      "cited_expected_source": null,
+      "passed": true,
+      "category": null,
+      "reason": "correctly refused"
+    },
+    {
+      "id": "case_22",
+      "type": "out_of_scope",
+      "question": "What is the best personal investment strategy for saving my salary while working as a chief engineer?",
+      "answer": "I am unable to answer queries regarding personal advice as my assistance is restricted to ship spare parts, stock, prices, lead times, and supplier terms and conditions.",
+      "refused": true,
+      "sources": [],
+      "retrieved_docs": [
+        "supplier_terms_nordic.md",
+        "supplier_terms_pacific.md"
+      ],
+      "tool_used": null,
+      "source_retrieved": true,
+      "cited_expected_source": null,
+      "passed": true,
+      "category": null,
+      "reason": "correctly refused"
+    }
+  ]
+}

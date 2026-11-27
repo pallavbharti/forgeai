@@ -1,0 +1,36 @@
+[
+  {
+    "from": "v1",
+    "to": "v2",
+    "changes": [
+      {
+        "category": "prompt_defect",
+        "change": "appended rules to system prompt: ['Always include all specific details, including makers, brands, and manufacturers mentioned alongside parts in the source text.', 'Ensure answers are fully comprehensive by cross-checking all descriptive attributes associated with the requested item in the context.']",
+        "why": "The failure was caused by omitting a key detail (the maker 'Yanmar') present in the context. Adding rules to capture all associated attributes and makers prevents incomplete answers.",
+        "addresses": [
+          "case_14"
+        ]
+      }
+    ],
+    "score_before": 0.955,
+    "score_after": 0.955,
+    "note": "no improvement"
+  },
+  {
+    "from": "v2",
+    "to": "v3",
+    "changes": [
+      {
+        "category": "prompt_defect",
+        "change": "appended rules to system prompt: ['When explaining supplier terms and conditions regarding returns, explicitly state all qualifying conditions, restrictions, and exceptions mentioned in the source text rather than giving a generalized summary.', 'Carefully verify the exact scope of supplier policies and do not omit crucial qualifying clauses such as error attribution when answering questions about returns or warranties.']",
+        "why": "The failure occurred because the assistant provided an incomplete answer regarding return policies by omitting the critical condition that returns are only allowed for parts supplied in error. These rules target completeness and precision in extracting policy details without hallucinating.",
+        "addresses": [
+          "case_17"
+        ]
+      }
+    ],
+    "score_before": 0.955,
+    "score_after": 0.955,
+    "note": "no improvement"
+  }
+]

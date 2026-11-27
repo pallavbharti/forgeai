@@ -1,0 +1,586 @@
+{
+  "label": "v1",
+  "score": 1.0,
+  "by_type": {
+    "answerable": "12/12",
+    "edge": "5/5",
+    "out_of_scope": "5/5"
+  },
+  "failure_categories": {
+    "retrieval_miss": 0,
+    "prompt_defect": 0,
+    "hallucination": 0,
+    "wrong_refusal": 0
+  },
+  "verdicts": [
+    {
+      "id": "case_01",
+      "type": "answerable",
+      "question": "How many days of paid annual leave am I entitled to as a permanent shore staff member?",
+      "answer": "As a permanent shore staff member, you are entitled to 18 working days of paid annual leave per calendar year.",
+      "refused": false,
+      "sources": [
+        "leave_policy.md"
+      ],
+      "retrieved_docs": [
+        "leave_policy.md",
+        "remote_work_policy.md",
+        "travel_expense_policy.md"
+      ],
+      "tool_used": null,
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 1.0,
+      "missing_facts": [],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer accurately states the correct number of paid annual leave days for permanent shore staff as supported by the source text."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_02",
+      "type": "answerable",
+      "question": "When can employees in their first year take leave?",
+      "answer": "Employees in their first year may take leave only after completing 3 months of service (the probation period).",
+      "refused": false,
+      "sources": [
+        "leave_policy.md"
+      ],
+      "retrieved_docs": [
+        "leave_policy.md",
+        "remote_work_policy.md",
+        "travel_expense_policy.md"
+      ],
+      "tool_used": null,
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 1.0,
+      "missing_facts": [],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer accurately states that employees in their first year may take leave after completing 3 months of service, which is directly supported by the source text."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_03",
+      "type": "answerable",
+      "question": "What is the maximum number of unused annual leave days that can be carried forward to the next year?",
+      "answer": "A maximum of 10 days of unused annual leave may be carried forward to the next calendar year.",
+      "refused": false,
+      "sources": [
+        "leave_policy.md"
+      ],
+      "retrieved_docs": [
+        "leave_policy.md",
+        "remote_work_policy.md",
+        "travel_expense_policy.md"
+      ],
+      "tool_used": null,
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 1.0,
+      "missing_facts": [],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer accurately states the maximum number of unused annual leave days that can be carried forward as 10 days, directly supported by the source text."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_04",
+      "type": "answerable",
+      "question": "What documentation is required for sick leave longer than 2 consecutive days?",
+      "answer": "A medical certificate from a registered doctor is required for sick leave longer than 2 consecutive days.",
+      "refused": false,
+      "sources": [
+        "leave_policy.md"
+      ],
+      "retrieved_docs": [
+        "leave_policy.md",
+        "remote_work_policy.md",
+        "travel_expense_policy.md"
+      ],
+      "tool_used": null,
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 1.0,
+      "missing_facts": [],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer accurately states the exact required documentation for sick leave longer than 2 consecutive days as found in the source text."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_05",
+      "type": "answerable",
+      "question": "How many days of maternity leave are provided for the first two children?",
+      "answer": "Maternity leave is 26 weeks of paid leave for the first two children.",
+      "refused": false,
+      "sources": [
+        "leave_policy.md"
+      ],
+      "retrieved_docs": [
+        "leave_policy.md",
+        "remote_work_policy.md",
+        "travel_expense_policy.md"
+      ],
+      "tool_used": null,
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 1.0,
+      "missing_facts": [],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer accurately states that 26 weeks of paid leave are provided for the first two children, which is directly supported by the source passages."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_06",
+      "type": "answerable",
+      "question": "How many public holidays does the company observe per year?",
+      "answer": "The company observes 10 public holidays per year, which are published by HR every December for the following year.",
+      "refused": false,
+      "sources": [
+        "leave_policy.md"
+      ],
+      "retrieved_docs": [
+        "leave_policy.md",
+        "remote_work_policy.md",
+        "travel_expense_policy.md"
+      ],
+      "tool_used": null,
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 1.0,
+      "missing_facts": [],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer accurately states that the company observes 10 public holidays per year, which is directly supported by the source text."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_07",
+      "type": "answerable",
+      "question": "Which days are mandatory office days for all teams?",
+      "answer": "Tuesday and Thursday are mandatory office days for all teams (\"anchor days\").",
+      "refused": false,
+      "sources": [
+        "remote_work_policy.md"
+      ],
+      "retrieved_docs": [
+        "leave_policy.md",
+        "remote_work_policy.md",
+        "travel_expense_policy.md"
+      ],
+      "tool_used": null,
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 1.0,
+      "missing_facts": [],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer accurately states that Tuesday and Thursday are mandatory office days as specified in the remote work policy."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_08",
+      "type": "answerable",
+      "question": "What are the core collaboration hours during which employees must be reachable on Teams?",
+      "answer": "Core collaboration hours are 10:00 to 16:00 IST, during which employees must be reachable on Teams, whether at home or in the office.",
+      "refused": false,
+      "sources": [
+        "remote_work_policy.md"
+      ],
+      "retrieved_docs": [
+        "leave_policy.md",
+        "remote_work_policy.md",
+        "travel_expense_policy.md"
+      ],
+      "tool_used": null,
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 1.0,
+      "missing_facts": [],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer accurately states the core collaboration hours as 10:00 to 16:00 IST based directly on the source passage."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_09",
+      "type": "answerable",
+      "question": "What is the reimbursement limit for monthly internet costs for hybrid employees?",
+      "answer": "Hybrid employees are eligible for reimbursement of internet costs up to INR 1,000 per month.",
+      "refused": false,
+      "sources": [
+        "remote_work_policy.md"
+      ],
+      "retrieved_docs": [
+        "leave_policy.md",
+        "remote_work_policy.md",
+        "travel_expense_policy.md"
+      ],
+      "tool_used": null,
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 1.0,
+      "missing_facts": [],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer accurately states the monthly internet reimbursement limit of up to INR 1,000 as specified in the source document."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_10",
+      "type": "answerable",
+      "question": "Which travel class is permitted for flights of 6 hours or more?",
+      "answer": "Flights of 6 hours or more may be booked in premium economy. Business class is permitted only for Vice Presidents and above.",
+      "refused": false,
+      "sources": [
+        "travel_expense_policy.md"
+      ],
+      "retrieved_docs": [
+        "leave_policy.md",
+        "remote_work_policy.md",
+        "travel_expense_policy.md"
+      ],
+      "tool_used": null,
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 1.0,
+      "missing_facts": [],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer correctly identifies premium economy as the permitted travel class for flights of 6 hours or more and is fully supported by the source text."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_11",
+      "type": "answerable",
+      "question": "What is the daily per diem allowance for domestic travel?",
+      "answer": "For domestic travel, the per diem allowance is INR 2,500 per day, which covers meals and local transport.",
+      "refused": false,
+      "sources": [
+        "travel_expense_policy.md"
+      ],
+      "retrieved_docs": [
+        "leave_policy.md",
+        "remote_work_policy.md",
+        "travel_expense_policy.md"
+      ],
+      "tool_used": null,
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 1.0,
+      "missing_facts": [],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer accurately states the domestic per diem allowance of INR 2,500 per day as specified in the source text."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_12",
+      "type": "answerable",
+      "question": "What is the reimbursement rate when using a personal car for business travel?",
+      "answer": "The reimbursement rate for using a personal car for business travel is INR 12 per kilometre, supported by a trip log.",
+      "refused": false,
+      "sources": [
+        "travel_expense_policy.md"
+      ],
+      "retrieved_docs": [
+        "leave_policy.md",
+        "remote_work_policy.md",
+        "travel_expense_policy.md"
+      ],
+      "tool_used": null,
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 1.0,
+      "missing_facts": [],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer accurately states the reimbursement rate as INR 12 per kilometre, which is directly supported by the source text."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_13",
+      "type": "edge",
+      "question": "Hey! Im a shore staff worker. How many days of annual leave do I get and how do I apply for more than 3 days of it?",
+      "answer": "As a permanent shore staff employee, you are entitled to 18 working days of paid annual leave per calendar year.\n\nTo apply for more than 3 days of annual leave, you must apply through the HR portal \"PeopleDesk\" at least 14 days in advance.",
+      "refused": false,
+      "sources": [
+        "leave_policy.md"
+      ],
+      "retrieved_docs": [
+        "leave_policy.md",
+        "remote_work_policy.md",
+        "travel_expense_policy.md"
+      ],
+      "tool_used": null,
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 1.0,
+      "missing_facts": [],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer accurately states both required key facts and is fully supported by the source text."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_14",
+      "type": "edge",
+      "question": "If I travel internationally, what is my per diem, and within how many days must I submit my expense claim in PeopleDesk?",
+      "answer": "For international travel, the per diem is USD 60 per day. Expense claims must be submitted in PeopleDesk within 30 days of returning from the trip.",
+      "refused": false,
+      "sources": [
+        "travel_expense_policy.md"
+      ],
+      "retrieved_docs": [
+        "leave_policy.md",
+        "remote_work_policy.md",
+        "travel_expense_policy.md"
+      ],
+      "tool_used": null,
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 1.0,
+      "missing_facts": [],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer accurately states both the per diem rate and the submission deadline as specified in the source policy."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_15",
+      "type": "edge",
+      "question": "Can I work from home while completing my probation period?",
+      "answer": "Shore staff who have completed their probation period are eligible for hybrid work, meaning remote or work-from-home arrangements are not available during your probation period.",
+      "refused": false,
+      "sources": [
+        "remote_work_policy.md"
+      ],
+      "retrieved_docs": [
+        "leave_policy.md",
+        "remote_work_policy.md",
+        "travel_expense_policy.md"
+      ],
+      "tool_used": null,
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 1.0,
+      "missing_facts": [],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer accurately states that shore staff must complete their probation period to be eligible for hybrid work, which is directly supported by the source text."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_16",
+      "type": "edge",
+      "question": "What is the maximum number of days I can work from home per week, and when must those WFH days be marked in PeopleDesk?",
+      "answer": "Eligible employees may work from home up to 2 days per week. Work-from-home days must be marked in PeopleDesk by Friday of the preceding week.",
+      "refused": false,
+      "sources": [
+        "remote_work_policy.md"
+      ],
+      "retrieved_docs": [
+        "leave_policy.md",
+        "remote_work_policy.md",
+        "travel_expense_policy.md"
+      ],
+      "tool_used": null,
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 1.0,
+      "missing_facts": [],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer accurately states both key facts and is fully supported by the source passages."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_17",
+      "type": "edge",
+      "question": "What is the per diem for domestic travel and what does it cover?",
+      "answer": "For domestic travel, the per diem is INR 2,500 per day, which covers meals and local transport.",
+      "refused": false,
+      "sources": [
+        "travel_expense_policy.md"
+      ],
+      "retrieved_docs": [
+        "leave_policy.md",
+        "remote_work_policy.md",
+        "travel_expense_policy.md"
+      ],
+      "tool_used": null,
+      "source_retrieved": true,
+      "cited_expected_source": true,
+      "fact_coverage": 1.0,
+      "missing_facts": [],
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "reason": "The answer accurately states both the domestic per diem amount and what it covers, fully matching the source policy."
+      },
+      "passed": true,
+      "category": null,
+      "reason": "facts present, judge agrees"
+    },
+    {
+      "id": "case_18",
+      "type": "out_of_scope",
+      "question": "Can you give me legal advice regarding my employment contract dispute?",
+      "answer": "I am sorry, but I cannot provide legal advice regarding your employment contract dispute.",
+      "refused": true,
+      "sources": [],
+      "retrieved_docs": [
+        "leave_policy.md"
+      ],
+      "tool_used": null,
+      "source_retrieved": true,
+      "cited_expected_source": null,
+      "passed": true,
+      "category": null,
+      "reason": "correctly refused"
+    },
+    {
+      "id": "case_19",
+      "type": "out_of_scope",
+      "question": "I have a terrible fever and severe cough, what medicine should I take?",
+      "answer": "I am sorry, but I cannot answer questions about medical advice.",
+      "refused": true,
+      "sources": [],
+      "retrieved_docs": [
+        "leave_policy.md",
+        "remote_work_policy.md",
+        "travel_expense_policy.md"
+      ],
+      "tool_used": null,
+      "source_retrieved": true,
+      "cited_expected_source": null,
+      "passed": true,
+      "category": null,
+      "reason": "correctly refused"
+    },
+    {
+      "id": "case_20",
+      "type": "out_of_scope",
+      "question": "What are the specific leave entitlements and employment conditions for crew members currently deployed at sea?",
+      "answer": "I am sorry, but I cannot answer questions regarding crew member policies as they are out of my scope.",
+      "refused": true,
+      "sources": [],
+      "retrieved_docs": [
+        "leave_policy.md",
+        "remote_work_policy.md",
+        "travel_expense_policy.md"
+      ],
+      "tool_used": null,
+      "source_retrieved": true,
+      "cited_expected_source": null,
+      "passed": true,
+      "category": null,
+      "reason": "correctly refused"
+    },
+    {
+      "id": "case_21",
+      "type": "out_of_scope",
+      "question": "What are the salary bands for senior managers in the company?",
+      "answer": "I am sorry, but I cannot answer questions regarding salary bands as that topic is not covered in the provided HR policies.",
+      "refused": true,
+      "sources": [],
+      "retrieved_docs": [
+        "leave_policy.md",
+        "remote_work_policy.md",
+        "travel_expense_policy.md"
+      ],
+      "tool_used": null,
+      "source_retrieved": true,
+      "cited_expected_source": null,
+      "passed": true,
+      "category": null,
+      "reason": "correctly refused"
+    },
+    {
+      "id": "case_22",
+      "type": "out_of_scope",
+      "question": "What exact calendar date of the month is payroll processed and disbursed to employees?",
+      "answer": "I apologize, but I cannot answer questions about payroll processing dates as that topic is not covered in the provided HR policies.",
+      "refused": true,
+      "sources": [],
+      "retrieved_docs": [
+        "leave_policy.md",
+        "remote_work_policy.md",
+        "travel_expense_policy.md"
+      ],
+      "tool_used": null,
+      "source_retrieved": true,
+      "cited_expected_source": null,
+      "passed": true,
+      "category": null,
+      "reason": "correctly refused"
+    }
+  ]
+}

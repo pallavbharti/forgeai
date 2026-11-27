@@ -1,0 +1,255 @@
+{
+  "cases": [
+    {
+      "question": "How many days of paid annual leave am I entitled to as a permanent shore staff member?",
+      "type": "answerable",
+      "expected_sources": [
+        "leave_policy.md"
+      ],
+      "key_facts": [
+        "18 working days"
+      ],
+      "should_refuse": false,
+      "id": "case_01"
+    },
+    {
+      "question": "When can employees in their first year take leave?",
+      "type": "answerable",
+      "expected_sources": [
+        "leave_policy.md"
+      ],
+      "key_facts": [
+        "completing 3 months of service"
+      ],
+      "should_refuse": false,
+      "id": "case_02"
+    },
+    {
+      "question": "What is the maximum number of unused annual leave days that can be carried forward to the next year?",
+      "type": "answerable",
+      "expected_sources": [
+        "leave_policy.md"
+      ],
+      "key_facts": [
+        "maximum of 10 days"
+      ],
+      "should_refuse": false,
+      "id": "case_03"
+    },
+    {
+      "question": "What documentation is required for sick leave longer than 2 consecutive days?",
+      "type": "answerable",
+      "expected_sources": [
+        "leave_policy.md"
+      ],
+      "key_facts": [
+        "medical certificate from a registered doctor"
+      ],
+      "should_refuse": false,
+      "id": "case_04"
+    },
+    {
+      "question": "How many days of maternity leave are provided for the first two children?",
+      "type": "answerable",
+      "expected_sources": [
+        "leave_policy.md"
+      ],
+      "key_facts": [
+        "26 weeks of paid leave"
+      ],
+      "should_refuse": false,
+      "id": "case_05"
+    },
+    {
+      "question": "How many public holidays does the company observe per year?",
+      "type": "answerable",
+      "expected_sources": [
+        "leave_policy.md"
+      ],
+      "key_facts": [
+        "10 public holidays per year"
+      ],
+      "should_refuse": false,
+      "id": "case_06"
+    },
+    {
+      "question": "Which days are mandatory office days for all teams?",
+      "type": "answerable",
+      "expected_sources": [
+        "remote_work_policy.md"
+      ],
+      "key_facts": [
+        "Tuesday and Thursday are mandatory office days"
+      ],
+      "should_refuse": false,
+      "id": "case_07"
+    },
+    {
+      "question": "What are the core collaboration hours during which employees must be reachable on Teams?",
+      "type": "answerable",
+      "expected_sources": [
+        "remote_work_policy.md"
+      ],
+      "key_facts": [
+        "10:00 to 16:00 IST"
+      ],
+      "should_refuse": false,
+      "id": "case_08"
+    },
+    {
+      "question": "What is the reimbursement limit for monthly internet costs for hybrid employees?",
+      "type": "answerable",
+      "expected_sources": [
+        "remote_work_policy.md"
+      ],
+      "key_facts": [
+        "up to INR 1,000 per month"
+      ],
+      "should_refuse": false,
+      "id": "case_09"
+    },
+    {
+      "question": "Which travel class is permitted for flights of 6 hours or more?",
+      "type": "answerable",
+      "expected_sources": [
+        "travel_expense_policy.md"
+      ],
+      "key_facts": [
+        "premium economy"
+      ],
+      "should_refuse": false,
+      "id": "case_10"
+    },
+    {
+      "question": "What is the daily per diem allowance for domestic travel?",
+      "type": "answerable",
+      "expected_sources": [
+        "travel_expense_policy.md"
+      ],
+      "key_facts": [
+        "INR 2,500 per day"
+      ],
+      "should_refuse": false,
+      "id": "case_11"
+    },
+    {
+      "question": "What is the reimbursement rate when using a personal car for business travel?",
+      "type": "answerable",
+      "expected_sources": [
+        "travel_expense_policy.md"
+      ],
+      "key_facts": [
+        "INR 12 per kilometre"
+      ],
+      "should_refuse": false,
+      "id": "case_12"
+    },
+    {
+      "question": "Hey! Im a shore staff worker. How many days of annual leave do I get and how do I apply for more than 3 days of it?",
+      "type": "edge",
+      "expected_sources": [
+        "leave_policy.md"
+      ],
+      "key_facts": [
+        "18 working days",
+        "at least 14 days in advance"
+      ],
+      "should_refuse": false,
+      "id": "case_13"
+    },
+    {
+      "question": "If I travel internationally, what is my per diem, and within how many days must I submit my expense claim in PeopleDesk?",
+      "type": "edge",
+      "expected_sources": [
+        "travel_expense_policy.md"
+      ],
+      "key_facts": [
+        "USD 60 per day",
+        "within 30 days"
+      ],
+      "should_refuse": false,
+      "id": "case_14"
+    },
+    {
+      "question": "Can I work from home while completing my probation period?",
+      "type": "edge",
+      "expected_sources": [
+        "remote_work_policy.md",
+        "leave_policy.md"
+      ],
+      "key_facts": [
+        "Shore staff who have completed their probation period",
+        "probation period"
+      ],
+      "should_refuse": false,
+      "id": "case_15"
+    },
+    {
+      "question": "What is the maximum number of days I can work from home per week, and when must those WFH days be marked in PeopleDesk?",
+      "type": "edge",
+      "expected_sources": [
+        "remote_work_policy.md"
+      ],
+      "key_facts": [
+        "up to 2 days per week",
+        "by Friday of the preceding week"
+      ],
+      "should_refuse": false,
+      "id": "case_16"
+    },
+    {
+      "question": "What is the per diem for domestic travel and what does it cover?",
+      "type": "edge",
+      "expected_sources": [
+        "travel_expense_policy.md"
+      ],
+      "key_facts": [
+        "INR 2,500 per day",
+        "covers meals and local transport"
+      ],
+      "should_refuse": false,
+      "id": "case_17"
+    },
+    {
+      "question": "Can you give me legal advice regarding my employment contract dispute?",
+      "type": "out_of_scope",
+      "expected_sources": [],
+      "key_facts": [],
+      "should_refuse": true,
+      "id": "case_18"
+    },
+    {
+      "question": "I have a terrible fever and severe cough, what medicine should I take?",
+      "type": "out_of_scope",
+      "expected_sources": [],
+      "key_facts": [],
+      "should_refuse": true,
+      "id": "case_19"
+    },
+    {
+      "question": "What are the specific leave entitlements and employment conditions for crew members currently deployed at sea?",
+      "type": "out_of_scope",
+      "expected_sources": [],
+      "key_facts": [],
+      "should_refuse": true,
+      "id": "case_20"
+    },
+    {
+      "question": "What are the salary bands for senior managers in the company?",
+      "type": "out_of_scope",
+      "expected_sources": [],
+      "key_facts": [],
+      "should_refuse": true,
+      "id": "case_21"
+    },
+    {
+      "question": "What exact calendar date of the month is payroll processed and disbursed to employees?",
+      "type": "out_of_scope",
+      "expected_sources": [],
+      "key_facts": [],
+      "should_refuse": true,
+      "id": "case_22"
+    }
+  ],
+  "rejected_by_validator": []
+}

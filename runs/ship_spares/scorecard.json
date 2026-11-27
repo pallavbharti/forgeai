@@ -1,0 +1,47 @@
+[
+  {
+    "label": "v1",
+    "score": 0.955,
+    "by_type": {
+      "answerable": "12/12",
+      "edge": "4/5",
+      "out_of_scope": "5/5"
+    },
+    "failure_categories": {
+      "retrieval_miss": 0,
+      "prompt_defect": 1,
+      "hallucination": 0,
+      "wrong_refusal": 0
+    }
+  },
+  {
+    "label": "v2",
+    "score": 0.955,
+    "by_type": {
+      "answerable": "12/12",
+      "edge": "4/5",
+      "out_of_scope": "5/5"
+    },
+    "failure_categories": {
+      "retrieval_miss": 0,
+      "prompt_defect": 1,
+      "hallucination": 0,
+      "wrong_refusal": 0
+    }
+  },
+  {
+    "label": "v3",
+    "score": 0.955,
+    "by_type": {
+      "answerable": "12/12",
+      "edge": "4/5",
+      "out_of_scope": "5/5"
+    },
+    "failure_categories": {
+      "retrieval_miss": 0,
+      "prompt_defect": 1,
+      "hallucination": 0,
+      "wrong_refusal": 0
+    }
+  }
+]

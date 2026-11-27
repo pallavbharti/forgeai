@@ -1,0 +1,262 @@
+{
+  "cases": [
+    {
+      "question": "What is the unit price and stock quantity for part number MP-1001?",
+      "type": "answerable",
+      "expected_sources": [
+        "spares_catalogue.csv"
+      ],
+      "key_facts": [
+        "unit_price_usd: 420",
+        "stock_qty: 14"
+      ],
+      "should_refuse": false,
+      "id": "case_01"
+    },
+    {
+      "question": "Can you provide the lead time and supplier for the exhaust valve spindle MP-1002?",
+      "type": "answerable",
+      "expected_sources": [
+        "spares_catalogue.csv"
+      ],
+      "key_facts": [
+        "lead_time_days: 45",
+        "supplier: Nordic Marine Supply"
+      ],
+      "should_refuse": false,
+      "id": "case_02"
+    },
+    {
+      "question": "What equipment and maker correspond to part number AE-2001?",
+      "type": "answerable",
+      "expected_sources": [
+        "spares_catalogue.csv"
+      ],
+      "key_facts": [
+        "equipment: Auxiliary engine Yanmar 6EY18",
+        "maker: Yanmar"
+      ],
+      "should_refuse": false,
+      "id": "case_03"
+    },
+    {
+      "question": "How many units of Lube oil filter element AE-2003 are currently in stock?",
+      "type": "answerable",
+      "expected_sources": [
+        "spares_catalogue.csv"
+      ],
+      "key_facts": [
+        "stock_qty: 120"
+      ],
+      "should_refuse": false,
+      "id": "case_04"
+    },
+    {
+      "question": "What is the unit price of the mechanical seal for the ballast pump Shinko GVD200?",
+      "type": "answerable",
+      "expected_sources": [
+        "spares_catalogue.csv"
+      ],
+      "key_facts": [
+        "unit_price_usd: 640"
+      ],
+      "should_refuse": false,
+      "id": "case_05"
+    },
+    {
+      "question": "What is the lead time in days for the Purifier intermediate service kit?",
+      "type": "answerable",
+      "expected_sources": [
+        "spares_catalogue.csv"
+      ],
+      "key_facts": [
+        "lead_time_days: 18"
+      ],
+      "should_refuse": false,
+      "id": "case_06"
+    },
+    {
+      "question": "What are the payment terms for Nordic Marine Supply?",
+      "type": "answerable",
+      "expected_sources": [
+        "supplier_terms_nordic.md"
+      ],
+      "key_facts": [
+        "45 days net from the date of invoice"
+      ],
+      "should_refuse": false,
+      "id": "case_07"
+    },
+    {
+      "question": "What is the minimum order value for Pacific Spares Co?",
+      "type": "answerable",
+      "expected_sources": [
+        "supplier_terms_pacific.md"
+      ],
+      "key_facts": [
+        "USD 300 per purchase order"
+      ],
+      "should_refuse": false,
+      "id": "case_08"
+    },
+    {
+      "question": "What volume discount does Nordic Marine Supply offer on orders of USD 20,000 or more?",
+      "type": "answerable",
+      "expected_sources": [
+        "supplier_terms_nordic.md"
+      ],
+      "key_facts": [
+        "8% discount on orders of USD 20,000 or more"
+      ],
+      "should_refuse": false,
+      "id": "case_09"
+    },
+    {
+      "question": "What is the warranty period for parts supplied by Pacific Spares Co?",
+      "type": "answerable",
+      "expected_sources": [
+        "supplier_terms_pacific.md"
+      ],
+      "key_facts": [
+        "18 months from delivery"
+      ],
+      "should_refuse": false,
+      "id": "case_10"
+    },
+    {
+      "question": "What is the restocking fee for returned unused parts under Nordic Marine Supply terms?",
+      "type": "answerable",
+      "expected_sources": [
+        "supplier_terms_nordic.md"
+      ],
+      "key_facts": [
+        "15% restocking fee"
+      ],
+      "should_refuse": false,
+      "id": "case_11"
+    },
+    {
+      "question": "How much is the handling fee for orders below the minimum order value from Nordic Marine Supply?",
+      "type": "answerable",
+      "expected_sources": [
+        "supplier_terms_nordic.md"
+      ],
+      "key_facts": [
+        "handling fee of USD 75"
+      ],
+      "should_refuse": false,
+      "id": "case_12"
+    },
+    {
+      "question": "Can I get a discount for ordering part MP-1001 from its supplier, and what are the order value thresholds?",
+      "type": "edge",
+      "expected_sources": [
+        "spares_catalogue.csv",
+        "supplier_terms_nordic.md"
+      ],
+      "key_facts": [
+        "supplier: Nordic Marine Supply",
+        "5% discount on orders between USD 5,000 and USD 19,999"
+      ],
+      "should_refuse": false,
+      "id": "case_13"
+    },
+    {
+      "question": "What is the warranty term for the turbocharger cartridge supplied by Pacific Spares Co?",
+      "type": "edge",
+      "expected_sources": [
+        "spares_catalogue.csv",
+        "supplier_terms_pacific.md"
+      ],
+      "key_facts": [
+        "maker: Yanmar",
+        "12-month warranty"
+      ],
+      "should_refuse": false,
+      "id": "case_14"
+    },
+    {
+      "question": "Tell me the price of MP-1003 and what payment terms apply to it.",
+      "type": "edge",
+      "expected_sources": [
+        "spares_catalogue.csv",
+        "supplier_terms_nordic.md"
+      ],
+      "key_facts": [
+        "unit_price_usd: 1290",
+        "45 days net from the date of invoice"
+      ],
+      "should_refuse": false,
+      "id": "case_15"
+    },
+    {
+      "question": "How much does a Piston ring set cost and what is the minimum order value for its supplier?",
+      "type": "edge",
+      "expected_sources": [
+        "spares_catalogue.csv",
+        "supplier_terms_nordic.md"
+      ],
+      "key_facts": [
+        "unit_price_usd: 1290",
+        "Minimum order value: USD 500"
+      ],
+      "should_refuse": false,
+      "id": "case_16"
+    },
+    {
+      "question": "Can I return unused Cylinder head gasket parts from Pacific Spares Co and within how many days?",
+      "type": "edge",
+      "expected_sources": [
+        "spares_catalogue.csv",
+        "supplier_terms_pacific.md"
+      ],
+      "key_facts": [
+        "supplier: Pacific Spares Co",
+        "accepted within 14 days"
+      ],
+      "should_refuse": false,
+      "id": "case_17"
+    },
+    {
+      "question": "Can you calculate the total cost for 3 units of MP-1001 including the Nordic Marine Supply volume discount?",
+      "type": "out_of_scope",
+      "expected_sources": [],
+      "key_facts": [],
+      "should_refuse": true,
+      "id": "case_18"
+    },
+    {
+      "question": "What are the recommended torque settings for tightening the cylinder head bolts on the Yanmar 6EY18 engine?",
+      "type": "out_of_scope",
+      "expected_sources": [],
+      "key_facts": [],
+      "should_refuse": true,
+      "id": "case_19"
+    },
+    {
+      "question": "How should I handle a crew member who is complaining about fatigue and requesting shore leave?",
+      "type": "out_of_scope",
+      "expected_sources": [],
+      "key_facts": [],
+      "should_refuse": true,
+      "id": "case_20"
+    },
+    {
+      "question": "Can you give me step-by-step instructions on how to overhaul the main engine MAN B&W 6S50MC fuel pump?",
+      "type": "out_of_scope",
+      "expected_sources": [],
+      "key_facts": [],
+      "should_refuse": true,
+      "id": "case_21"
+    },
+    {
+      "question": "What is the best personal investment strategy for saving my salary while working as a chief engineer?",
+      "type": "out_of_scope",
+      "expected_sources": [],
+      "key_facts": [],
+      "should_refuse": true,
+      "id": "case_22"
+    }
+  ],
+  "rejected_by_validator": []
+}

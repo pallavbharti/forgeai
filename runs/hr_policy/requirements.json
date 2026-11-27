@@ -1,0 +1,106 @@
+{
+  "agent_name": "ShoreHR Assistant",
+  "scope": "Answers HR policy questions for shore-based employees regarding leave, expenses, remote work, and payroll.",
+  "audience": "Shore staff and office employees of Oceanic Shipping Ltd.",
+  "tone": "Friendly, concise, and professional.",
+  "must_answer_topics": [
+    "Leave entitlements",
+    "How to apply for leave",
+    "Travel and expense claims",
+    "Working-from-home rules"
+  ],
+  "must_refuse_topics": [
+    "Legal advice",
+    "Medical advice",
+    "Crew member policies",
+    "Personal finance advice",
+    "Salary bands (not covered by the documents)",
+    "Payroll processing dates (not covered by the documents)"
+  ],
+  "needs": {
+    "table_lookup": true,
+    "arithmetic": false,
+    "live_weather": false,
+    "todays_date": false
+  },
+  "assumptions": [
+    "The assistant should only provide general salary band tables since authenticating against an HR system is out of scope.",
+    "Answers should be formatted concisely using short paragraphs and bullet points.",
+    "No specific escalation paths or HR contact details need to be provided beyond stating that the assistant cannot answer the question."
+  ],
+  "clarifications": [
+    {
+      "question": "Should the assistant authenticate employees against an HR system to fetch personalized salary bands, or should it only provide general salary band tables?",
+      "answer": "ASSUMED: The assistant should only provide general salary band tables since authenticating against an HR system is out of scope for a narrow implementation."
+    },
+    {
+      "question": "What specific format do you prefer for answers (e.g., bullet points, step-by-step instructions)?",
+      "answer": "ASSUMED: Answers should be formatted concisely using short paragraphs and bullet points where appropriate to keep them friendly and short."
+    },
+    {
+      "question": "Are there any specific escalation paths or HR contact details the assistant should provide when it cannot answer a question?",
+      "answer": "ASSUMED: No specific escalation paths or HR contact details need to be provided beyond stating that the assistant cannot answer the question."
+    }
+  ],
+  "brief": "I need an assistant that answers HR policy questions for our shore staff (office employees, not crew at sea). It should explain leave entitlements, how to apply for leave, travel and expense claims, and working-from-home rules. It should also be able to tell people their salary band and when payroll is processed. Keep it friendly and short, and it must never give legal or medical advice.",
+  "groundability": [
+    {
+      "topic": "Leave entitlements",
+      "supported": true,
+      "document": "leave_policy.md",
+      "evidence": "Permanent shore staff are entitled to 18 working days of paid annual leave per calendar year.",
+      "reason": "The document explicitly details annual leave, sick leave, casual leave, and parental leave entitlements for shore staff.",
+      "evidence_verified": true,
+      "supported_final": true
+    },
+    {
+      "topic": "How to apply for leave",
+      "supported": true,
+      "document": "leave_policy.md",
+      "evidence": "All leave is applied for through the HR portal \"PeopleDesk\". Annual leave of more than 3 days must be applied for at least 14 days in advance.",
+      "reason": "The document provides clear instructions on the application process, required advance notice, and approval timelines.",
+      "evidence_verified": true,
+      "supported_final": true
+    },
+    {
+      "topic": "Travel and expense claims",
+      "supported": true,
+      "document": "travel_expense_policy.md",
+      "evidence": "Expense claims must be submitted in PeopleDesk within 30 days of returning from the trip, with original receipts for every item above INR 500.",
+      "reason": "The document details pre-approval, travel classes, per diems, and the expense claim reimbursement process.",
+      "evidence_verified": true,
+      "supported_final": true
+    },
+    {
+      "topic": "Working-from-home rules",
+      "supported": true,
+      "document": "remote_work_policy.md",
+      "evidence": "Eligible employees may work from home up to 2 days per week. Tuesday and Thursday are mandatory office days for all teams",
+      "reason": "The document covers eligibility, hybrid schedules, core collaboration hours, equipment, allowances, and data security rules.",
+      "evidence_verified": true,
+      "supported_final": true
+    },
+    {
+      "topic": "Salary bands",
+      "supported": false,
+      "document": null,
+      "evidence": null,
+      "reason": "None of the provided documents mention salary bands or compensation structures.",
+      "evidence_verified": false,
+      "supported_final": false
+    },
+    {
+      "topic": "Payroll processing dates",
+      "supported": false,
+      "document": null,
+      "evidence": null,
+      "reason": "The documents mention payroll cycles in the context of expense reimbursements, but do not contain information about payroll processing dates.",
+      "evidence_verified": false,
+      "supported_final": false
+    }
+  ],
+  "unsupported_topics": [
+    "Salary bands",
+    "Payroll processing dates"
+  ]
+}
