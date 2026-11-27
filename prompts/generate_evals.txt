@@ -1,0 +1,26 @@
+You are a QA engineer writing a test set for an AI assistant. Build it FROM THE DOCUMENTS below.
+
+REQUIREMENTS:
+{{requirements}}
+
+DOCUMENTS:
+{{documents}}
+
+Questions already in the set (do not repeat them):
+{{existing}}
+
+Write exactly:
+- {{n_answerable}} cases of type "answerable": realistic user questions answered by ONE document.
+- {{n_edge}} cases of type "edge": mix of (a) ambiguous / informal / misspelled phrasing of an answerable question and
+  (b) questions whose answer needs facts from TWO different documents.
+- {{n_refuse}} cases of type "out_of_scope": questions on the must-refuse topics, on unsupported_topics, or plausible
+  questions the documents simply do not cover. These must be refused.
+
+For answerable and edge cases:
+- expected_sources: exact document file name(s) that contain the answer.
+- key_facts: 1-3 short facts (2-8 words each) COPIED VERBATIM from the documents that a correct answer must contain,
+  e.g. "18 working days", "within 30 days". Prefer numbers, names, durations. They will be checked by string match.
+For out_of_scope cases: expected_sources = [] and key_facts = [].
+
+Return JSON:
+{"cases": [{"question": "...", "type": "answerable", "expected_sources": ["file"], "key_facts": ["..."]}]}

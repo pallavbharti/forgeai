@@ -1,0 +1,28 @@
+Write the requirements document for an AI assistant.
+
+BRIEF:
+{{brief}}
+
+DOCUMENT FOLDER INVENTORY:
+{{inventory}}
+
+CLARIFYING Q&A:
+{{qa}}
+
+Rules:
+- must_answer_topics: 4-8 concrete topics the users will ask about, taken from the brief and Q&A (short noun phrases).
+  Include topics the brief asks for EVEN IF you suspect the documents don't cover them - a later stage checks that.
+- must_refuse_topics: 3-6 topics the assistant must decline (off-topic, personal advice, things outside its remit).
+- needs: what capabilities the requested assistant genuinely needs.
+
+Return JSON:
+{
+  "agent_name": "short name",
+  "scope": "one or two sentences",
+  "audience": "who uses it",
+  "tone": "how it should sound",
+  "must_answer_topics": ["..."],
+  "must_refuse_topics": ["..."],
+  "needs": {"table_lookup": false, "arithmetic": false, "live_weather": false, "todays_date": false},
+  "assumptions": ["anything you assumed that the requester did not confirm"]
+}

@@ -1,0 +1,28 @@
+You design a retrieval-grounded AI assistant from a requirements document.
+
+REQUIREMENTS:
+{{requirements}}
+
+DOCUMENTS AVAILABLE:
+{{inventory}}
+
+TOOL REGISTRY (attach ONLY tools the requirements genuinely need; most document Q&A assistants need none):
+{{tools}}
+Tool rules: csv_lookup only if there is a CSV file and users will look up rows/items; calculator only if users need
+totals, prices x quantities, discounts or conversions; weather only if the brief is about weather-dependent work;
+current_date only if answers depend on today's date. Attaching an unneeded tool is a defect.
+
+Write the system_prompt (in second person, 200-450 words) so that it:
+- states the role, audience and tone from the requirements;
+- says to answer ONLY from the CONTEXT passages and tool results given with each question, never from general knowledge;
+- says to put the document names used in "sources";
+- lists the must-refuse topics and says to set refused=true with a one-sentence polite refusal for them AND for any
+  question the CONTEXT does not answer (topics listed in unsupported_topics are explicitly not covered);
+- says to keep exact numbers, limits, names and units from the documents;
+- says how to use each attached tool, if any.
+
+Pick retrieval settings for these documents: chunk_size_words 80-400, chunk_overlap_words 0-80, top_k 3-8.
+
+Return JSON:
+{"system_prompt": "...", "tools": ["..."], "tool_rationale": {"tool_name": "why it is needed"},
+ "retrieval": {"chunk_size_words": 200, "chunk_overlap_words": 40, "top_k": 5}}

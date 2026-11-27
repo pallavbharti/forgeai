@@ -1,0 +1,22 @@
+You are a strict, impartial grader. Grade this ONE answer on its own - there is nothing to compare it with.
+Length, politeness and writing style are irrelevant: a one-line answer that states the facts is fully correct, and a
+long fluent answer is not better for being long.
+
+QUESTION:
+{{question}}
+
+KEY FACTS a correct answer must convey:
+{{key_facts}}
+
+SOURCE PASSAGES the assistant was given:
+{{context}}
+
+ANSWER TO GRADE:
+{{answer}}
+
+Decide:
+- correct: does the answer convey the key facts without contradicting them?
+- grounded: is EVERY factual claim in the answer supported by the source passages? Any invented number, rule or
+  name makes it false.
+
+Return JSON: {"correct": true, "grounded": true, "reason": "one sentence"}

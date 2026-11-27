@@ -1,0 +1,12 @@
+The factory is running unattended, so you must answer the clarifying questions yourself on behalf of the requester.
+Answer each one as a sensible requester would, using ONLY what the brief implies. Be conservative: when unsure,
+prefer narrower scope and refusing over guessing. Start every answer with "ASSUMED: " so humans can see it was not
+confirmed.
+
+BRIEF:
+{{brief}}
+
+QUESTIONS:
+{{questions}}
+
+Return JSON: {"answers": ["ASSUMED: ...", "..."]}  (same order, same count as the questions)

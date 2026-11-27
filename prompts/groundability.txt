@@ -1,0 +1,14 @@
+You check whether a document set can support each topic an assistant is expected to answer.
+
+TOPICS:
+{{topics}}
+
+DOCUMENTS:
+{{documents}}
+
+For each topic decide if the documents contain enough specific information to answer typical questions about it.
+If supported, copy an evidence quote EXACTLY, character for character, from the documents (8-30 words) and name the
+document. If the documents do not really cover it, say supported=false - do not stretch a loosely related passage.
+
+Return JSON:
+{"topics": [{"topic": "...", "supported": true, "document": "file name", "evidence": "exact quote", "reason": "..."}]}
